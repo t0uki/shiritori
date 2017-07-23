@@ -16,7 +16,7 @@ class DBManager {
 			// DBDriver読み込み
 			Class.forName("com.mysql.jdbc.Driver");
 			// コネクション確立/(jdbc:mysql://(サーバー名)/(DB名),user名,password);
-			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/shiritori", "root", "root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/DBNAME", "user", "pass");
 			return con;
 		} catch (Exception e) {
 		}
